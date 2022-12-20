@@ -14,6 +14,7 @@ function temporizador(segundos) {
       const segundosRestantes = Math.round((then - Date.now()) / 1000);
       if(segundosRestantes < 0) {
         clearInterval(cuentaAtras);
+         alert("La cuenta atrás finalizó")
         return;
       }
       displayTiempoRestante(segundosRestantes);
